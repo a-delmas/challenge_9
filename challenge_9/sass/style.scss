@@ -1,0 +1,62 @@
+#slide1 {
+    height: 100vh;
+    background: url("img/parallax1.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+
+#slide2 {
+    padding:5rem;
+    background: url("img/parallax2.jpg") center no-repeat fixed;
+    background-size: cover;
+
+}
+
+#slide3 {
+    padding:5rem;
+    background: url("img/parallax3.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    div{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+}
+
+.container {
+    padding-left:5rem;
+}
+
+.parters {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.portfolio {
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.load {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+.send {
+    font-weight: bold;
+}
+
+.where {
+    padding-bottom: 10rem;
+}
+
+.power {
+    text-decoration: underline;
+}
