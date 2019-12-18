@@ -1,3 +1,11 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+p {
+    color : grey;
+}
+
 #slide1 {
     height: 100vh;
     background: url("img/parallax1.jpg") center no-repeat fixed;
@@ -5,14 +13,14 @@
 }
 
 #slide2 {
-    padding:5rem;
+    padding:10rem;
     background: url("img/parallax2.jpg") center no-repeat fixed;
     background-size: cover;
 
 }
 
 #slide3 {
-    padding:5rem;
+    padding:10rem;
     background: url("img/parallax3.jpg") center no-repeat fixed;
     background-size: cover;
 }
@@ -33,24 +41,31 @@ header{
 }
 
 .parters {
+    p{
+        color:white;
+    }
     height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.portfolio {
-    padding-right: 2rem;
-    padding-bottom: 2rem;
-}
-
 .load {
     background-color: #f1f1f1;
     font-weight: bold;
+    border:none;
+    border-radius: 0;
 }
 
 .send {
     font-weight: bold;
+    border:none;
+    border-radius: 0;
+}
+
+.top {
+    border:none;
+    border-radius: 0;
 }
 
 .where {
@@ -59,4 +74,40 @@ header{
 
 .power {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 766px)
+{
+    span {
+        display: none;
+    }
+
+    .container {
+        padding:0;
+        margin:0;
+        padding-left: 1rem;
+        padding-right:1rem;
+        img {
+            max-width: 75%;
+            margin: auto;
+        }
+        p {
+            width: 90%;
+        }
+    }
+    .parters {
+        .portfolio {
+            max-width: 100%;
+        }
+    }
+    #slide2, #slide3 {
+        padding:0;
+        height:50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .really {
+        display: none;
+    }
 }
